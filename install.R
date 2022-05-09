@@ -1,3 +1,4 @@
 install.packages("dplyr")
-install.packages("hyddate",repos="ftp://ftp.bafg.de/pub/REFERATE/GRDC/R", type="source")
-install.packages("hydts",repos="ftp://ftp.bafg.de/pub/REFERATE/GRDC/R", type="source")
+install.packages(c("abind", "lubridate", "ncdf4", "xts", "zoo")
+install.packages("hyddate",repos="http://116.203.125.251/drat", type="source")
+install.packages("hydts",repos="http://116.203.125.251/drat", type="source")
