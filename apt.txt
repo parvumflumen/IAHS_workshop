@@ -1,2 +1,3 @@
 units
 libudunits2-dev
+libproj-dev
