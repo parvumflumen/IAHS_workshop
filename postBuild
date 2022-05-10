@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -q -O example.nc4 http://116.203.125.251/example.nc4
