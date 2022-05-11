@@ -21,14 +21,21 @@ meta(dwd_tmean)
 # simple plot
 plot(dwd_tmean$Zugspitze)
 
-
+# aggregate by years
 years <- hydts::get_year(dwd_tmean$Zugspitze)
+
 Zugspitze.yavg <- hydts::aggregate(dwd_tmean$Zugspitze,
                                    by = years,
                                    FUN = mean)
+
+# subset
 Zugspitze.yavg <- Zugspitze.yavg[32:148,]
+
+# type conversion
 Zugspitze.yavg$Group.1 <- as.numeric(Zugspitze.yavg$Group.1) 
+
 plot(Zugspitze.yavg, xlab="year", ylab = "T_mean [°C]")
+
+# linear trend line
 abline(lm(Zugspitze.yavg$Zugspitze ~ Zugspitze.yavg$Group.1))
-lm(Zugspitze.yavg$Zugspitze ~ Zugspitze.yavg$Group.1)
 

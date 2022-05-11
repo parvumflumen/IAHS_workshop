@@ -39,4 +39,4 @@ kongo.yearlymean <- hydtsReg(startDate = as.POSIXct("1903-01-01", tz = "GMT"),
 
 hydts::statnames(kongo.yearlymean) <- "Kinshasa"
 
-plot(kongo.yearlymean, xlab="year", ylab="Q [mÂ³/s]", main="Discharge Kongo River, Kinshasa Station (yearly mean)")
+plot(kongo.yearlymean, xlab="year", ylab="Q [m³/s]", main="Discharge Kongo River, Kinshasa Station (yearly mean)")
