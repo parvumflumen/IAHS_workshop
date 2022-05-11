@@ -1,7 +1,5 @@
 library(raster)
 
-url = "ftp://ftp.bafg.de/pub/REFERATE/GRDC/internal_use/example.nc4"
-download.file(url, destfile = "example.nc4")
 raster::stack(x = "example.nc4")
 
 watergap <- raster::stack("example.nc4")

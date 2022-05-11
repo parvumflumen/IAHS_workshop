@@ -1,6 +1,6 @@
 library(hydts)
 
-kongo.data <- read.csv("1147010_Q_Day.Cmd.txt",
+kongo.data <- read.csv("examples/1147010_Q_Day.Cmd.txt",
                        header = TRUE,
                        sep = ";",
                        skip = 36)
